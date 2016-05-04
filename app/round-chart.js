@@ -4,6 +4,7 @@
 
 /* global d3*/
 
+(function (){
 let margin = {top: 20, left: 30, bottom: 40, right: 30}
 let width = 500 - margin.left - margin.right
 let height = 400 - margin.top - margin.bottom
@@ -11,10 +12,10 @@ let height = 400 - margin.top - margin.bottom
 let data = [
   {name: 'A', value: '15', value1: '40', value2: '10'},
   {name: 'B', value: '20', value1: '50', value2: '20'},
-  {name: 'C', value: '40', value1: '110', value2: '40'},
+  {name: 'C', value: '50', value1: '110', value2: '40'},
   {name: 'D', value: '15', value1: '5', value2: '10'},
-  {name: 'E', value: '60', value1: '20', value2: '60'},
-  {name: 'F', value: '30', value1: '70', value2: '30'}
+  {name: 'E', value: '35', value1: '20', value2: '60'},
+  {name: 'F', value: '70', value1: '70', value2: '30'}
 ]
 
 //  init data
@@ -230,4 +231,6 @@ function handlerMouseMove (tooltip) {
       left: event.pageX + 'px'
     })
 }
+})()
+
 
