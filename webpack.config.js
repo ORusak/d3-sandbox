@@ -8,9 +8,9 @@ const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
   entry: {
-    histogram: './app/histogram.js',
-    ['round-chart']: './app/round-chart.js',
-    ['histogram-horizontal']: './app/histogram-horizontal.js',
+    histogram: './app/histogram-group.js',
+    ['join-graphic']: './app/join-graphic.js',
+    ['histogram-horizontal']: './app/histogram-group-horizontal.js',
     ['histogram-stack']: './app/histogram-stack.js',
     ['histogram-stack-horizontal']: './app/histogram-stack-horizontal.js'
   },
