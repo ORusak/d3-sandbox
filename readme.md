@@ -7,9 +7,7 @@ Status: release.
 * gulp
 * standard
 
-Demo: 
+Demo: https://harebrown.herokuapp.com/demo-d3-sandbox/index.html
 
-```
-```
 
     
