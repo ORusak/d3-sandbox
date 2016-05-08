@@ -3,6 +3,7 @@
  */
 
 /* global d3*/
+(function (){
 let data = [
   {name: 'A', value: '15', value1: '-10'},
   {name: 'B', value: '-20', value1: '-20'},
@@ -103,3 +104,4 @@ barGroup.selectAll('text')
   .style('text-anchor', 'middle')
   .style('font-size', '10pt')
   .text((d) => d)
+})()

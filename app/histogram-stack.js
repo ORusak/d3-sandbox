@@ -3,6 +3,7 @@
  */
 
 /* global d3*/
+(function (){
 let data = [
   {name: 'A', value: '15', value1: '-10'},
   {name: 'B', value: '-20', value1: '-20'},
@@ -156,3 +157,4 @@ TextGroupNegative.selectAll('text')
     let value = d.y + d.y0
     return value === 0 ? '' : value
   })
+})()
