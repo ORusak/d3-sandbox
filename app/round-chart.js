@@ -47,7 +47,7 @@ class RoundChart {
     let tooltip = d3.select('body').append('div')
       .attr('class', 'tooltip')
 
-    let handlerMouseOverArc = this.handlerMouseOver.bind(this, tooltip, this.arcLarger, this.data)
+    let handlerMouseOverArc = this.handlerMouseOver.bind(this, tooltip, this.arcLarger)
     let handlerMouseOutArc = this.handlerMouseOut.bind(this, tooltip, this.arc)
     let arcs = pieContainer.selectAll('.arc')
       .data(this.pie(this.data.values))
@@ -74,6 +74,7 @@ class RoundChart {
       return
     }
 
+    this.data = dataRow
     let data = dataRow.values
     let pie = d3.layout.pie()
       .sort(null)
@@ -111,9 +112,10 @@ class RoundChart {
       })
   }
 
-  handlerMouseOver (tooltip, arcLarger, data, element) {
+  handlerMouseOver (tooltip, arcLarger, element) {
     let event = d3.event
     let arcTarget = d3.select(event.target)
+    let data = this.data
 
     arcTarget.on('mousemove', this.handlerMouseMove.bind(null, tooltip))
       .transition()
