@@ -1,25 +1,15 @@
 # Description
-Status: development.
+Status: release.
 
-d3 diagram sandbox.
+[d3.js](https://github.com/mbostock/d3) diagram sandbox.
 
 * d3js
 * gulp
+* standard
 
 Demo: 
 
 ```
 ```
 
-Note: environment tested only os windows; browsers firefox, google chrome.
-
-# Requirement
-
-*  
-
-# Application
-
-* Features
-    *     
-* Roadmap
     
